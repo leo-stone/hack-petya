@@ -10,7 +10,7 @@ First news after the hello was:
 
 *oh no, oh nooo*
 
-Well, i always like a challenge ..., the hard task of analyzing and reimplementing the modified salsa algorithm is done.
+Well, i always like a challenge ..., the hard task of analyzing and reimplementing the modified salsa algorithm is done.  
 So, here it is for everyone to play and experiment with. _Btw. paying ransom isn't that much of a challenge_.
 
 The code reimplements the hashing used to verify the entered key, there is still the possibility, that the real decryption uses a different hashing function. But at the first glance it seemed the same. I hadn't had the time to look deeper yet.
