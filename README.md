@@ -11,7 +11,7 @@ First news after the hello was:
 *oh no, oh nooo*
 
 Well, i always like a challenge ..., the hard task of analyzing and reimplementing the modified salsa algorithm is done.
-so, here it is for everyone to play and experiment with. _Btw. paying ransom isn't that much of a challenge_.
+So, here it is for everyone to play and experiment with. _Btw. paying ransom isn't that much of a challenge_.
 
 The code reimplements the hashing used to verify the entered key, there is still the possibility, that the real decryption uses a different hashing function. But at the first glance it seemed the same. I hadn't had the time to look deeper yet.
 
@@ -32,7 +32,7 @@ The code reads a file "src.txt" which is the 512-bytes from sector 55, pulls the
 
 It also reads "nonce.txt" which is the 8-byte nonce that was used in the attack.
 
-Last but not least it fires up 24 threads to search the keyspace via bruteforce for a match.
+Last, but not least, it fires up 24 threads to search the keyspace via bruteforce for a match.
 
 ### ToDo:
 
