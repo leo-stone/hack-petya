@@ -30,7 +30,7 @@ The position of the nonce i still have to look up.
 
 The code reads a file "src.txt" which is the 512-bytes from sector 55, pulls the interesting words, xor's them with 0x37 to give us the target output of the salsa hashing function.
 
-It also reads "nounce.txt" which is the 8-byte nounce that was used in the attack.
+It also reads "nonce.txt" which is the 8-byte nonce that was used in the attack.
 
 Last but not least it fires up 24 threads to search the keyspace via bruteforce for a match.
 
