@@ -35,6 +35,9 @@ Last, but not least, it fires up a genetic solver which gets us the key in a few
 
 I recovered my key in say 10..30 seconds :), i just say Genetic Algorithms
 
+*PS: I know the code is a mess, but is was kinda in a hurry ..., i also had to hack into the genetic lib 'cause its not
+compatible with go1.6, concurrent map read/writes panics.*
+
 
 
 
