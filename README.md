@@ -13,7 +13,7 @@ First news after the hello was:
 Well, I always like a challenge ..., the hard task of analyzing and reimplementing the modified salsa algorithm is done.  
 So, here it is for everyone to play and experiment with. _Btw. paying ransom isn't that much of a challenge_.
 
-The code reimplements the hashing used to verify the entered key, there is still the possibility, that the real decryption uses a different hashing function. But at the first glance it seemed the same. I hadn't had the time to look deeper yet.
+The code reimplements the hashing used to verify the entered key.
 
 ### Some key points: 
 
@@ -34,6 +34,16 @@ It also reads "nonce.txt" which is the 8-byte nonce that was used in the attack.
 Last, but not least, it fires up a genetic solver which gets us the key in a few seconds.
 
 I recovered my key in say 10..30 seconds :), i just say Genetic Algorithms
+
+*PS: I know the code is a mess, but I was kinda in a hurry ..., i also had to hack into the genetic lib 'cause its not
+compatible with go1.6, concurrent map read/writes panics.*
+
+### Usage
+
+Get the nonce and the verification sector of the encrypted disk via dd or some hexeditor, save them as nonce.txt and src.txt
+in the directory where the program is, start the program, wait some seconds, have the key. 
+
+Best use the key on an image of the victim disk, inside a vm ... just to be on the safe side. 
 
 
 
