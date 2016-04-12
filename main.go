@@ -2,7 +2,7 @@ package main
 
 import (
 	"encoding/hex"
-	"flag"
+	//"flag"
 	"fmt"
 	"github.com/handcraftsman/GeneticGo"
 	"github.com/willf/bitset"
@@ -117,7 +117,15 @@ func try_genetic_approach() {
 	var result = solver.GetBest(getFitness, display, geneSet, numberOfChromosomes, numberOfGenesInAChromosome)
 	for getFitness(result) > 0 {
 
-		result = solver.With(result).GetBest(getFitness, display, geneSet, numberOfChromosomes, numberOfGenesInAChromosome)
+		//since With does somehow not really work ...
+		//probably because of my hasty changes in the lib code
+		//i comment it out
+
+		//result = solver.With(result).GetBest(getFitness, display, geneSet, numberOfChromosomes, numberOfGenesInAChromosome)
+
+		//and use just GetBest
+
+		result = solver.GetBest(getFitness, display, geneSet, numberOfChromosomes, numberOfGenesInAChromosome)
 
 	}
 	fmt.Println("Your key is: ", genesToKey(result))
